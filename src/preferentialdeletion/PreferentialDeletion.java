@@ -13,6 +13,8 @@ import java.util.*;
 /**
  *
  * @author Mnassar Alyami
+ // Extention for our last project:
+ // https://github.com/MnassarAlyami/Preferential-Deletion
  */
 
 public class PreferentialDeletion {
@@ -299,10 +301,10 @@ public class PreferentialDeletion {
 		}
 		System.out.println(li);
 		System.out.println("Graph Plotting");
-		LineChart associativeGraph = new LineChart("Assortativity Coefficient Metric");
+		LineChart A_Graph = new LineChart("Assortativity Coefficient Metric");
 		associativeGraph.LineChart1("Coefficient Value","Test ",runs,li,"Coefficient Value");
 		associativeGraph.pack();
-		RefineryUtilities.centerFrameOnScreen( associativeGraph );          
+		RefineryUtilities.centerFrameOnScreen( A_Graph );          
 		associativeGraph.setVisible( true );
 
 	}
