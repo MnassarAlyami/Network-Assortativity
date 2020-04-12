@@ -124,6 +124,8 @@ public class PreferentialDeletion {
 		}
 	}
         
+     //Implemented as presented by Mihhail Verhovtsov (2015):[Commit 77735df]
+     // https://github.com/Infeligo/jgrapht-metrics/blob/master/src/main/java/org/jgrapht/metrics/AssortativityCoefficientMetric.java
         
 	public static double AssortivityCoefficient(ArrayList<Node> list) {
 
