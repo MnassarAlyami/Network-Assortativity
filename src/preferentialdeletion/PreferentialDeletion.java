@@ -13,8 +13,9 @@ import java.util.*;
 /**
  *
  * @author Mnassar Alyami
- // Extention for our last project:
+ // Extension for our last project.
  // https://github.com/MnassarAlyami/Preferential-Deletion
+ // In this project, we measure and plot the dynamic graph assortativity.
  */
 
 public class PreferentialDeletion {
