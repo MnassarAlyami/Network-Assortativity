@@ -173,7 +173,7 @@ public class PreferentialDeletion {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-                //
+                //To store the assortativity of graph
                 ArrayList<Double> li = new ArrayList<Double>();
 
 		
@@ -217,8 +217,9 @@ public class PreferentialDeletion {
 		}
                 
 		System.out.println("Done with First Run");
+		//To calculate the assortativity of 1st graph
 		li.add(AssortivityCoefficient(nodeList));
-		System.out.println("Done With Calculation");
+		System.out.println("Done With 1st Calculation");
                 
 		BProb = new ArrayList<>();
 		DProb = new ArrayList<>();
@@ -255,10 +256,9 @@ public class PreferentialDeletion {
 		}
                 
 		System.out.println("Done with Second Run");
-
-
+		//To calculate the assortativity of 2nd graph
 		li.add(AssortivityCoefficient(nodeList));
-
+		System.out.println("Done With 2nd Calculation");
 		BProb = new ArrayList<>();
 		DProb = new ArrayList<>();
 		nodeList = new ArrayList<>();
@@ -294,12 +294,15 @@ public class PreferentialDeletion {
 		}
 		
                 System.out.println("Done with Third Run");
-		
+		//To calculate the assortativity of 3rd graph
 		li.add(AssortivityCoefficient(nodeList));
+		System.out.println("Done With 3rd Calculation");
+		
 		ArrayList<Integer> runs = new ArrayList<Integer>();
 		for(int i = 0; i < 3;i++) {
 			runs.add(i+1);
 		}
+		
 		System.out.println(li);
 		System.out.println("Graph Plotting");
 		LineChart A_Graph = new LineChart("Assortativity Coefficient Metric");
