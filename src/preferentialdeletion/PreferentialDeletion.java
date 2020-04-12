@@ -302,10 +302,10 @@ public class PreferentialDeletion {
 		System.out.println(li);
 		System.out.println("Graph Plotting");
 		LineChart A_Graph = new LineChart("Assortativity Coefficient Metric");
-		associativeGraph.LineChart1("Coefficient Value","Test ",runs,li,"Coefficient Value");
-		associativeGraph.pack();
+		A_Graph.LineChart1("Coefficient Value","Test ",runs,li,"Coefficient Value");
+		A_Graph.pack();
 		RefineryUtilities.centerFrameOnScreen( A_Graph );          
-		associativeGraph.setVisible( true );
+		A_Graph.setVisible( true );
 
 	}
 }
